@@ -42,7 +42,7 @@ const Home = () => {
         {users.map(user => (
           <div key={user.id} className="user-card">
             <img src={user.avatar_url} alt="" className="user-avatar" />
-            <h3>{user.login}</h3>
+            <h3 style={{color:"#333333", fontSize:"25px",}}>{user.login}</h3>
             <Link to={`/user/${user.login}`} className="more-btn">More</Link>
           </div>
         ))}
