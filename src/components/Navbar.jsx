@@ -1,16 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const Navbar = () => {
     return (
         <>
             <header className="header">
                 <div className="container nav">
-                    <a href="https://github.com/" className="logo">
+                    <Link to="https://github.com/" className="logo">
                         <section className='icon'>
                             <i className="fab fa-github" style={{ color: "white" }} >
                             </i></section>
                         <h1 style={{ color: "white" }}>Github Finder</h1>
-                    </a>
+                    </Link>
                     <ul className="list">
                         <li className="item">
                             <a href="/" className="link">Home</a>

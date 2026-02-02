@@ -128,7 +128,7 @@
     opacity: .8;
 }
 
-.clear-btn{
+.clear-btn {
     width: 100%;
     text-align: center;
     padding: 10px 0;
@@ -176,47 +176,60 @@
 }
 
 .stats-bar {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-  border: 1px solid #eee;
-  padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    border: 1px solid #eee;
+    padding: 20px;
 }
 
 .badge {
-  padding: 5px 15px;
-  border-radius: 5px;
-  color: white;
-  font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
 }
 
-.badge-red { background: #dc3545; }
-.badge-green { background: #28a745; }
-.badge-light { background: #f4f4f4; color: #333; border: 1px solid #ccc; }
-.badge-dark { background: #343a40; }
+.badge-red {
+    background: #dc3545;
+}
+
+.badge-green {
+    background: #28a745;
+}
+
+.badge-light {
+    background: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.badge-dark {
+    background: #343a40;
+}
 
 .back-btn {
-  background: #f4f4f4;
-  padding: 8px 15px;
-  text-decoration: none;
-  color: #333;
+    background: #f4f4f4;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
 }
 
 .github-link {
-  background: #333;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 10px;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 .user-nav {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin: 30px 0; 
+    margin: 30px 0;
 }
 
 .back-btn {
@@ -289,29 +302,73 @@
 }
 
 @media screen and (max-width:785px) {
-    .users-grid{
+    .users-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width:545px) {
-    .users-grid{
+    .users-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media screen and (max-width:480px ){
-        .profile-card{
-            flex-direction: column;
-        }
+@media screen and (max-width:480px) {
+    .profile-card {
+        flex-direction: column;
+    }
 }
 
-@media screen  and (max-width:430px){
-    .nav{
+@media screen and (max-width:430px) {
+    .nav {
         flex-direction: column;
         gap: 15px;
     }
-    .stats-bar{
+
+    .stats-bar {
         flex-direction: column;
     }
+}
+
+.not_found {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.not_found h1 {
+    font-size: 120px;
+    margin: 0;
+    letter-spacing: 10px;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.not_found p {
+    font-size: 24px;
+    opacity: 0.8;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.back_home {
+    margin-top: 10px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    border: 1px solid #ccc;
+}
+
+.back_home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    opacity: .9;
 }
